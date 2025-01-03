@@ -42,7 +42,7 @@
                                 @csrf
                                 <a href="/logout" class="nav-link"
                                     onclick="event.preventDefault();
-                                    this.closest('form').submit();">
+                    this.closest('form').submit();">
                                     Sair
                                 </a>
                             </form>
@@ -74,18 +74,6 @@
         <p>HDC Events &copy; 2020</p>
     </footer>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const flashMessage = document.querySelector('.msg');
-            if (flashMessage) {
-                setTimeout(() => {
-                    flashMessage.style.transition = "opacity 0.5s ease";
-                    flashMessage.style.opacity = "0";
-                    setTimeout(() => flashMessage.remove(), 500);
-                }, 3000);
-            }
-        });
-    </script>
 </body>
 
 </html>
